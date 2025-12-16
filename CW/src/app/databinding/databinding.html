@@ -1,0 +1,22 @@
+<div style="border: 3px solid blue; padding:5px;margin-bottom:10px;">
+
+    <h6>Data Binding Component</h6>
+    <input type="text" [disabled]="textdisabled" />
+    <label> Enable TextField : 
+    <input type="checkbox" (click)="checkboxhandler($event)" /> 
+    </label>
+
+    <p [class]="paraclass" (click)="paratogglehandler()"> </p>
+
+    Enter Acquired Marks <input type="number" 
+                                (input)="texthandler($event)"
+                                /> 
+    <select (change)="selecthandler($event)">
+        <option>25</option>
+        <option>50</option>
+        <option>75</option>
+        <option>100</option>
+    </select>
+    <p [style.color]="perc<35?'red':'green'"> Result :{{perc < 35?"FAILED" : "PASSED"}} </p>
+
+</div>
