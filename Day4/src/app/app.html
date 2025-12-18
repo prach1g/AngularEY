@@ -1,0 +1,25 @@
+<div>
+   
+    <h1>HOME PAGE</h1>
+    <!-- <p>Welcome {{username}}</p>
+    <p>Reverse {{reverseuname()}}</p>
+    <button (click)="handler()"> Click Me!</button> -->
+
+    <nav style="display: flex;gap: 20px;">
+        <a routerLink="/counter" routerLinkActive="active-link">Counter</a>
+        <a routerLink="/databinding" routerLinkActive="active-link">Data Binding Example</a>
+         <a routerLink="/ifex" routerLinkActive="active-link">If Ex</a>
+         <a routerLink="/forex" routerLinkActive="active-link">ForEx</a>
+          <a routerLink="/serviceex" routerLinkActive="active-link">Service Ex</a>
+           <a routerLink="/ajaxex" routerLinkActive="active-link">Ajax Ex</a>
+        <a routerLink="/lifeex" routerLinkActive="active-link">Life Cycle</a>
+        <a routerLink="/pipex" routerLinkActive="active-link">Pipe</a>
+        <a routerLink="/uf" routerLinkActive="active-link">User</a>
+    </nav>
+
+    <div style="border:3px dotted black; padding:10px; margin:10px;">
+    
+    <router-outlet></router-outlet>
+   </div>
+    
+</div>

@@ -1,0 +1,13 @@
+
+
+<p>OUTPUT {{ output }}</p>
+
+<button (click)="consumeStream()">Consume Stream</button>
+<div>
+
+    <p *ngFor="let user of users">{{user.id}} {{ user.firstName}} {{ user.lastName }}  {{ user.email }}</p>
+    
+    <!-- <button (click)="handler()">Get Data</button> -->
+  <button (click)="handler2()">Get Data</button>
+
+</div>

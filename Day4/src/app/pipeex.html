@@ -1,0 +1,15 @@
+<p>UPPER CASE PIPE  : {{"galaXY" | uppercase}}</p>
+
+<p>Lower case pipe : {{ "DATABASE" | lowercase }}</p>
+
+<!--USE THE json pipe to print object always -->
+<p>PERSON OBJ = {{person  | json}}</p>
+
+<p>{{today | date :'YYYY/MMM/dd'}}</p>
+<p>{{today | date :'dd-MM-yyyy'}}</p>
+<p>{{today | date :'YYYY/MMM/dd HH:MM:SS'}}</p>
+<p>{{today | date :'short'}}</p>
+
+<input type="text" #i1  (change)="1"/>
+<p>The length of {{i1.value}} {{i1.value | numofchars}}</p>
+<p>The letter "a" has occured {{i1.value | numofchars :'a'}} times in {{i1.value}} </p>

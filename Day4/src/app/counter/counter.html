@@ -1,0 +1,13 @@
+<div>
+    {{u.userSignal().name}}
+   <p><label> Enter Counter Value :<input type="number"
+             (input)="texthandler($event)" />
+       </label>
+
+   <p>Counter : {{ counter }} </p>
+
+   <button id="I" 
+       (click)="commonhandler2($event)">INCREMENT</button>
+   <button  id="D"
+      (click)="commonhandler2($event)">DECREMENT</button>
+</div>>

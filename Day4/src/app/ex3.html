@@ -1,0 +1,21 @@
+
+
+<div [style.backgroundColor]="bgcolor">
+    <app-title displaymessage="IF Directive" 
+               infomessage="This component demonstrates use of *ngIf"
+               (colorchange)="parentshandler($event)">
+    </app-title>
+
+    <input type="checkbox" #cb1 (change)="1" />
+
+    @if(cb1.checked){
+    <p>
+        <img  [src]="image1" width="100" 
+                         height="100" alt="image not found" />
+        This is the image of a flower
+        let us know more ....
+    </p>
+    }
+
+
+</div>

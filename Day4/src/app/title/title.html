@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h1 class="display-10">{{ displaymessage }}</h1>
+  <p class="lead">{{ infomessage }} </p>
+  <hr class="my-3">
+  <p class="lead">
+    USER's CHOICE : 
+    <select (change) = "selecthandler()" [(ngModel)]="selectedcolor">
+        <option>white</option>
+        <option>pink</option>
+        <option>light blue</option>
+    </select>
+  </p>
+</div>
